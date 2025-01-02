@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+CO+Guides&display=swap');
+
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Outfit", serif;
+    color: rgb(148, 37, 37);
+}
+.main{
+    background-color: rgb(0, 4, 6);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+.main>.section{
+    width: 100%;
+}
+.main .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.main nav a{
+    text-decoration: none;
+    color: rgb(70, 167, 184);
+    font-size: 1.5rem;
+}
+.main a:hover{
+    color: rgb(66, 66, 119);
+}
+.primary-heading{
+    font-size: 5rem;
+}
+.plain-text{
+    font-size: 1.4rem;
+}
+span{
+    color: blue;
+}
+.head h1:hover{
+    color: blue;
+}
+.home-icons svg{
+    width: 6%;
+}
+.home .prof-pic{
+    height: 500px;
+    width: 500px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.prof-pic img{
+    height: 90%;
+    margin-top: 40px;
+}
+.home .prof-pic:hover{
+    img{transform: translateY(-30px) scale(1.3);
+    transition: transform .3s;}
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    height: 100vh;
+}
+.about-image{
+    height: 400px;
+    width: 400px;
+    border: 10px purple solid;
+    box-shadow: 0px 0px 20px rgb(94, 159, 68), 0px 0px 40px rgb(211, 231, 26);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.about-image img{
+    height: 100%;
+    /* margin-top: 40px; */
+}
+.about-text{
+    width: 50%;
+    text-align: center;
+}
+.service,.project{
+    height: fit-content;
+}
